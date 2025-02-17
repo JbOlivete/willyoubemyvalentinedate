@@ -8,12 +8,14 @@ const ybutton = document.getElementById("yes-btn");
 const finalMessage = document.getElementById("message");
 const header = document.getElementById("subhead");
 const btnContainer = document.getElementById("btn-con")
+const yesText = document.getElementById("yes")
 
 const maxClicks = 6;
 const startYesWidth = 100, maxYesWidth = 600;
 const startYesHeight = 50, maxYesHeight = 300;
 
-const startNoWidth = 200, minNoWidth = 140; 
+const startNoWidth = 200, minNoWidth = 140;
+const startFont = 18, maxFontSize = 80;
 
 nbutton.addEventListener("click", function() {
     if (clickCount < maxClicks) { 
@@ -36,6 +38,9 @@ nbutton.addEventListener("click", function() {
        
         let newNoWidth = startNoWidth - ((startNoWidth - minNoWidth) / maxClicks) * clickCount;
         nbutton.style.width = `${newNoWidth}px`;
+
+        let newFontSize = startFont  + ((maxFontSize - startFont)/maxClicks) * clickCount;
+        yesText.style.fontSize = `${newFontSize}px`;
     }
 });
 
