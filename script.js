@@ -1,4 +1,4 @@
-const gif = ["gif/pic2.gif", "gif/pic2.gif", "gif/pic3.gif", "gif/pic4.gif", "gif/pic5.gif", "gif/pic6.gif", "gif/yes.gif"];
+const gif = ["gif/pic2.gif", "gif/pic3.gif", "gif/pic4.gif", "gif/pic5.gif", "gif/pic6.gif", "gif/pic7.gif","gif/yes.gif"];
 const message = ["Please:(", "don't do this to me", "I will cry", "I really wanted to..", "I will not stop crying"];
 
 let clickCount = 0; 
